@@ -1,0 +1,101 @@
+body {
+  background-color: black;
+  font-family: monospace;
+  color: green;
+  text-align: left;
+  text-transform: uppercase;
+  width: 80vw;
+  height:10vh;
+}
+/*Viewport units (vh, vw, vmin, vmax), like percentages, are relative units, but they are based off different items. Viewport units are relative to the viewport dimensions (a pantalla do móbil ou portátil) (width or height) of a device, and percentages are relative to the size of the parent container element:
+vw (viewport width): 10vw would be 10% of the viewport's width.
+vh (viewport height): 3vh would be 3% of the viewport's height.
+vmin (viewport minimum): 70vmin would be 70% of the viewport's smaller dimension (height or width).
+vmax (viewport maximum): 100vmax would be 100% of the viewport's bigger dimension (height or width)*/
+h1{
+  color:yellow;
+  text-align: center;
+  background-color: rgba(45, 45, 45, 1);
+  font-weight: 20;
+}
+.yellow-text{
+  color:yellow;
+  font-size:25px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.size-image{
+  width: 400px;
+  height: 100px;
+  border-radius: 100%;
+  opacity: 0.5;
+  transform: scale(2);
+  transform: skewX(70deg);
+}
+.parrafo{
+  line-height:50px;
+}
+parrafo:hover {
+  color:blue;
+}
+.form-margin{
+  margin:20px;
+}
+#contact-form{
+  background-color: silver;
+  padding: 20px;
+  box-shadow: 0 10px 20px yellow, 0 6px 6px rgba(0,0,0,0.23);
+}
+#enviar{
+  background-color:green;
+  border-radius: 5px;
+}
+#enviar:hover{
+  animation-name: boton;
+  animation-fill-mode: forwards;
+}
+@keyframes boton {
+  100% {background-color: red;
+  }
+}
+#animation{
+  height:70px;
+  width:70%;
+  background:red;
+  border-radius:5px;
+  margin: 50px auto;
+  animation-name: rainbow;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+@keyframes rainbow{
+  0% {
+    background-color: blue;
+    top: 0px;
+  }
+  50% {
+    background-color: green;
+    top: 50px;
+    left: 25px;
+  }
+  100%{
+    background-color: orange;
+    top: 100px;
+    left: 0px;
+  }
+}
+/*The media e para establecer unha norma e que se se cumple apique outro tipo de formato a paxina ou o texto. Neste caso se a paxina e menos ancha de 500 pixeles, a paxina pose de color azul*/
+@media(max-width:500px){
+  body{background-color:blue;
+  }
+}
+/*The max-width of 100% will make sure the image is never wider than the container it is in, and the height of auto will make the image keep its original aspect ratio.*/
+.mel-berrande{
+  width: 400px;
+  height: 100px;
+  max-width: 100%;
+  display:block;
+  height:auto;
+}
+ 
